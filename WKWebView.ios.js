@@ -9,6 +9,7 @@ import ReactNative, {
   StyleSheet,
   UIManager,
   View,
+  ViewPropTypes,
   NativeModules,
   Text,
   ActivityIndicator
@@ -177,7 +178,7 @@ var WKWebView = createReactClass({
     onNavigationStateChange: PropTypes.func,
     scalesPageToFit: PropTypes.bool,
     startInLoadingState: PropTypes.bool,
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
     /**
      * Sets the JS to be injected when the webpage loads.
      */
